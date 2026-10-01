@@ -1,0 +1,62 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib">
+
+    <!--#region Language Metadata -->
+    <s:String x:Key="language_display_name">Українська</s:String>
+    <!--#endregion -->
+
+    <!--#region MainWindow -->
+    <s:String x:Key="mw_folder_path">Шлях до папки</s:String>
+    <s:String x:Key="mw_folder_not_found">Папку не знайдено</s:String>
+    <s:String x:Key="mw_patch">Застосувати</s:String>
+    <s:String x:Key="mw_restore">Відновити</s:String>
+    <s:String x:Key="mw_source_code">Вихідний код</s:String>
+    <s:String x:Key="mw_made_by">Зроблено з ❤️ by k1tbyte</s:String>
+    <s:String x:Key="mw_star_hint">Поставте зірку, якщо це було корисно ;)</s:String>
+    <s:String x:Key="mw_copy_logs">Скопіювати логи до буфера обміну</s:String>
+    <s:String x:Key="mw_export_logs">Експортувати логи у файл</s:String>
+    <!--#endregion -->
+
+    <!--#region Settings -->
+    <s:String x:Key="settings_title">Налаштування</s:String>
+    <s:String x:Key="settings_language">Мова</s:String>
+    <s:String x:Key="settings_save">Зберегти</s:String>
+    <!--#endregion -->
+
+    <!--#region EnhanceVectorsPopup -->
+    <s:String x:Key="pv_activate_pro">Активувати WeMod Pro</s:String>
+    <s:String x:Key="pv_devtools">DevTools на F12</s:String>
+    <s:String x:Key="pv_disable_updates">Вимкнути оновлення</s:String>
+    <s:String x:Key="pv_remote_web_panel_preview">Увімкнути віддалений доступ (бета)</s:String>
+    <s:String x:Key="pv_custom_scripts">Користувацькі скрипти</s:String>
+    <s:String x:Key="pv_add_js_scripts">Додати .js</s:String>
+    <s:String x:Key="pv_custom_scripts_hint">Вибрані файли .js пакуються у Wand і завантажуються в рендерері.</s:String>
+    <s:String x:Key="pv_no_custom_scripts">Скрипти не вибрано</s:String>
+    <s:String x:Key="pv_start">Почати</s:String>
+    <s:String x:Key="pv_auto_apply">Автоматично застосовувати після оновлень</s:String>
+    <s:String x:Key="pv_patch_method">Метод патчу</s:String>
+    <s:String x:Key="pv_strategy_static">Static (рекомендовано)</s:String>
+    <s:String x:Key="pv_strategy_supervised">Supervised</s:String>
+    <s:String x:Key="pv_strategy_hint">Static змінює файли Wand на диску та ламає цифровий підпис. Supervised патчить у пам'яті під час кожного запуску - може спрацьовувати антивірус і працює не всюди.</s:String>
+    <s:String x:Key="pv_popup_title">Що будемо покращувати?</s:String>
+    <!--#endregion -->
+
+    <!--#region Runtime log -->
+    <s:String x:Key="log_install_found">Директорію WeMod знайдено в {0} ({1})</s:String>
+    <s:String x:Key="log_already_patched">WeMod вже пропатчено. Якщо ви хочете пропатчити знову, спершу відновіть резервну копію.</s:String>
+    <s:String x:Key="log_ready">Готово до патчингу.</s:String>
+    <s:String x:Key="log_install_not_found">Директорію WeMod не знайдено.</s:String>
+    <s:String x:Key="log_no_directory">Не вдається виконати. Будь ласка, спочатку вкажіть директорію.</s:String>
+    <s:String x:Key="log_invalid_directory">Вибрана папка {0} не є дійсною директорією WeMod.</s:String>
+    <s:String x:Key="log_restore_failed">Не вдалося відновити резервну копію: {0}</s:String>
+    <s:String x:Key="log_patch_failed">Не вдалося пропатчити: {0}</s:String>
+    <s:String x:Key="log_copied">Логи скопійовано в буфер обміну.</s:String>
+    <s:String x:Key="log_copy_failed">Не вдалося скопіювати логи: {0}</s:String>
+    <s:String x:Key="log_exported">Логи експортовано до {0}.</s:String>
+    <s:String x:Key="log_export_failed">Не вдалося експортувати логи: {0}</s:String>
+    <s:String x:Key="log_open_link_failed">Не вдалося відкрити {0} у браузері.</s:String>
+    <s:String x:Key="dialog_pick_install">Виберіть директорію WeMod</s:String>
+    <!--#endregion -->
+
+</ResourceDictionary>

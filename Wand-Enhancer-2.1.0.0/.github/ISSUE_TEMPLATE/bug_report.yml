@@ -1,0 +1,93 @@
+name: Bug report
+description: Create a report to help us improve
+title: '[Bug]: '
+labels: ["bug"]
+assignees:
+  - k1tbyte
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **STOP BEFORE YOU POST: THIS PROJECT DOES NOT PUBLISH OFFICIAL EXECUTABLE DOWNLOADS.**
+        Build WandEnhancer yourself from your own fork or local source. If you downloaded an executable from YouTube, Discord, a mirror, or any other third-party website, treat it as untrusted. Do not open issues about third-party binaries or stolen accounts here - this project is not related to those downloads.
+
+  - type: checkboxes
+    id: build_source_check
+    attributes:
+      label: Build Source Confirmation (REQUIRED)
+      description: You must check this box to proceed.
+      options:
+        - label: I confirm that I built WandEnhancer myself from my own fork or local source, and did not download an executable from YouTube, Discord, mirrors, issue comments, or any other third-party website.
+          required: true
+
+  - type: input
+    id: client_version
+    attributes:
+      label: Client (Wand) version
+      description: Include the exact version and stable/beta channel (for example, 12.52.0 stable).
+    validations:
+      required: true
+
+  - type: input
+    id: enhancer_version
+    attributes:
+      label: Enhancer version
+      description: What version of this tool are you using?
+    validations:
+      required: true
+
+  - type: textarea
+    id: build_commit
+    attributes:
+      label: Build branch and commit
+      description: Copy the branch and source commit SHA from your Actions run or launcher.log. A version number alone cannot distinguish RC builds. No upstream pull request is needed to build your fork.
+      placeholder: "feature/rc_v_2.0.0.0, commit abc1234"
+    validations:
+      required: true
+
+  - type: textarea
+    id: patch_selection
+    attributes:
+      label: Selected patches and installation state
+      description: List the enabled patches and whether this is a fresh installation, upgrade, automatic re-patch, or Restore.
+    validations:
+      required: true
+
+  - type: textarea
+    id: launcher_logs
+    attributes:
+      label: Launcher logs
+      description: For startup failures, attach launcher.log and launcher.prev.log from the Wand installation root. If absent, say so. Redact personal paths; never include tokens, account storage dumps or executables.
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior.
+      value: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Screenshots & Additional context
+      description: Drag and drop screenshots here, or add any other context about the problem.
